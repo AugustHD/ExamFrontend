@@ -1,4 +1,26 @@
 table, th, td {
     border: 1px solid;
+    padding: 5px;
+    margin-left: 5px;
   }
+#target {
+    width: 100%;
+}  
+
+.formTable tr {
+    border: none;
+}
+
+.formTable td {
+    border: none;
+}
+
+#addProductBox {
+    background-color: skyblue;
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+}
+
   
