@@ -7,6 +7,8 @@ const formData = new FormData(addForm);
 console.log(formData.get("name"))
 const data = Object.fromEntries(formData);
 
+
+//TODO: Få addProduct til at virke.
 // Dette virker ikke. Returnere en null. Har noget med response.json() at gøre.
     fetch("http://localhost:8080/api/products/addProduct", {
         method: "POST",

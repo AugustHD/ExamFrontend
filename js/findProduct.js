@@ -1,4 +1,4 @@
-
+//TODO: Få findProduct til at virke.
 // Dette er nok ikke den rigtige måde at gøre det på..
 
 const findForm = document.querySelector("#findProductForm");
