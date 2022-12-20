@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="../js/Products.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -34,33 +33,52 @@
                         <th>Navn</th>
                         <th>Pris</th>
                         <th>Vægt (gram)</th>
+                        <th>ID</th>
                     </tr>
                 </table>
             </div>
             <div class="col">
-                <div id="addProductBox">
-                    <h4>Tilføj Produkt</h4>
-                    <form action="" method="POST">
+                <div class="ProductBox">
+                    <form id="addProductForm">
+                        <h4>Tilføj Produkt</h4>
                         <table class="formTable">
                             <tr>
-                                <td><label for="pName">Produkt navn:</label></td>
-                                <td><input type="text" id="pName" name="name" required></td>
+                                <td><label for="name">Produkt navn:</label></td>
+                                <td><input type="text" id="name" name="name" required></td>
                             </tr>
                             <tr>
-                                <td><label for="pPrice">Produkt pris:</label></td>
-                                <td><input type="number" id="pPrice" name="price" required></td>
+                                <td><label for="price">Produkt pris:</label></td>
+                                <td><input type="number" id="price" name="price" required></td>
                             </tr>
                             <tr>
-                                <td><label for="pWeight">Produkt vægt (gram):</label></td>
-                                <td><input type="number" id="pWeight" name="weight" required></td>
+                                <td><label for="weight">Produkt vægt (gram):</label></td>
+                                <td><input type="number" id="weight" name="weight" required></td>
+                            </tr>
+                            <tr>
+                                <td><input type="submit"></td>
                             </tr>
                         </table>
-                            <input type="submit">
                     </form>
+                <form id="findProductForm">
+                    <h4>Find Produkt</h4>
+                    <table class="formTable">
+                        <tr>
+                            <td><label for="pID">Produkt id:</label></td>
+                            <td><input type="number" id="pID" name="pID" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit"></td>
+                        </tr>
+                    </table>
+                </form>
                 </div>
             </div>
         </div>
+        </div>
     </div>
 </body>
-
+<!-- Local JS files -->
+<script src="../js/productsList.js"></script>
+    <script src="../js/addProduct.js"></script>
+    <script src="../js/findProduct.js"></script>
 </html>

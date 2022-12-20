@@ -7,6 +7,10 @@ table, th, td {
     width: 100%;
 }  
 
+.formTable {
+    margin: 5px;
+}
+
 .formTable tr {
     border: none;
 }
@@ -15,12 +19,21 @@ table, th, td {
     border: none;
 }
 
-#addProductBox {
+.ProductBox {
     background-color: skyblue;
-    display: block;
-    height: 100%;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
     padding: 2px;
+}
+
+#addProductForm {
+    display: block;
+}
+
+#findProductForm {
+    display: block
 }
 
   
