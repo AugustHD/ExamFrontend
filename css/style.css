@@ -1,3 +1,29 @@
+#header{
+    display: flex;
+    flex-direction: row;
+    background-color: #35A2FD;
+    color: #fff;
+    padding: 5px;
+}
+
+#headerBtn{
+    height: 100%;
+    background-color: transparent;
+    color: #fff;
+    border-style: solid;
+    border-color:#fff;
+    border-radius: 4px;
+    padding: px;
+    transition-duration: 0.4s;
+}
+
+#headerBtn:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+
 table, th, td {
     border: 1px solid;
     padding: 5px;

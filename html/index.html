@@ -21,10 +21,23 @@
         crossorigin="anonymous"></script>
     <title>Product Menu</title>
 </head>
+<header>
+    <div id="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-10">
+                    <h1>Produkt Oversigt</h1>
+                </div>
+                <div class="col">
+                    <button id="headerBtn"><h3>Se Afsendelser</h3></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<br>
 
 <body>
-    <h1>Produkt Oversigt</h1>
-    <hr>
     <div class="container-fluid">
         <div class="row">
             <div class="col-5">
@@ -59,26 +72,27 @@
                             </tr>
                         </table>
                     </form>
-                <form id="findProductForm">
-                    <h4>Find Produkt</h4>
-                    <table class="formTable">
-                        <tr>
-                            <td><label for="pID">Produkt id:</label></td>
-                            <td><input type="number" id="pID" name="pID" required></td>
-                        </tr>
-                        <tr>
-                            <td><input type="submit"></td>
-                        </tr>
-                    </table>
-                </form>
+                    <form id="findProductForm">
+                        <h4>Find Produkt</h4>
+                        <table class="formTable">
+                            <tr>
+                                <td><label for="pID">Produkt id:</label></td>
+                                <td><input type="number" id="pID" name="pID" required></td>
+                            </tr>
+                            <tr>
+                                <td><input type="submit"></td>
+                            </tr>
+                        </table>
+                    </form>
                 </div>
             </div>
         </div>
-        </div>
+    </div>
     </div>
 </body>
 <!-- Local JS files -->
 <script src="../js/productsList.js"></script>
-    <script src="../js/addProduct.js"></script>
-    <script src="../js/findProduct.js"></script>
+<script src="../js/addProduct.js"></script>
+<script src="../js/findProduct.js"></script>
+
 </html>
